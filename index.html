@@ -23,80 +23,7 @@
     <body>
         <div class="wrapper">
             <nav id="sidebar" class="sidebar js-sidebar">
-                <div class="sidebar-content js-simplebar">
-                    
-                    <div class="logo-flex">
-                        <img src="img/logo.png" class="logo" alt="การท่าเรือแห่งประเทศไทย">
-                        <div>
-                            การท่าเรือแห่งประเทศไทย
-                        </div>
-                    </div> 
-                    <br>
-                    <ul class="sidebar-nav">  
-                        <li class="sidebar-item">
-                            <a class="sidebar-link" href="index.html">
-                                <img src="img/icon-menu/p0.png" alt="icon"> 
-                                <span class="align-middle">Home </span> 
-                            </a> 
-                        </li>      
-                        <li class="sidebar-item item-sup">
-                            <a class="sidebar-link" href="#"> 
-                                <img src="img/icon-menu/p1.png" alt="icon"> 
-                                <span class="align-middle">VESSEL </span>
-                                <i class="fas fa-angle-down"></i>
-                            </a>
-                            <div class="sup-menu">
-                                <ul>
-                                    <li>
-                                        111
-                                        <ul>
-                                            <li>AAA</li>
-                                            <li>AAA</li>
-                                            <li>AAA</li>
-                                            <li>AAA</li>
-                                        </ul>
-                                    </li> 
-                                    <li>
-                                        222
-                                        <ul>
-                                            <li>BBB</li>
-                                            <li>BBB</li>
-                                            <li>BBB</li>
-                                            <li>BBB</li>
-                                        </ul>
-                                    </li> 
-                                    <li>
-                                        333
-                                        <ul>
-                                            <li>CCC</li>
-                                            <li>CCC</li>
-                                            <li>CCC</li>
-                                            <li>CCC</li>
-                                        </ul>
-                                    </li> 
-                                </ul>
-                            </div>
-                        </li> 
-                        <li class="sidebar-item item-sup">
-                            <a class="sidebar-link" href="#"> 
-                                <img src="img/icon-menu/p2.png" alt="icon"> 
-                                <span class="align-middle">AAAAA </span>
-                                <i class="fas fa-angle-down"></i>
-                            </a>
-                            <div class="sup-menu">
-                                <a class="sidebar-link" href="#"> 
-                                    <span class="align-middle">xxxxxxxx</span>
-                                </a>    
-                                <a class="sidebar-link" href="#"> 
-                                    <span class="align-middle">xxxxxxxx</span>
-                                </a>    
-                                <a class="sidebar-link" href="#"> 
-                                    <span class="align-middle">xxxxxxxx</span>
-                                </a>     
-                            </div>
-                        </li>
-                    </ul>  
-                </div>
+                
             </nav>
             <div class="main">
                 <nav  class="navbar navbar-expand navbar-light navbar-bg">
@@ -138,10 +65,19 @@
                 $('.item-sup').click(function () {
                     $('.item-sup').removeClass("show");  
                     $(this).addClass("show");     
+
+                    // var element = $('.sidebar-item.item-sup'); 
+                    // if (element.hasClass('show')) { 
+                    // }
+                    // else {  
+                    // } 
+                    // $('#myMenu li').click(function() {
+                    //     var NumOd = $(this).index() + 1;   
+                    // });  
                 });   
+ 
                 $('.item-sup ul li').click(function () {
-                    $('.item-sup ul li').removeClass("active");  
-                    $(this).addClass("active");     
+                    $(this).toggleClass("active");   
                 });   
             });   
             $(".tb-num td:nth-child(1)").each(function(i,v) {$(v).text(i + 1);});

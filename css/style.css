@@ -72,8 +72,7 @@ body{
   display: block; 
   min-height: 30px; 
   line-height: 16px;
-  border-bottom: .5px solid rgba(0, 0, 0, 0.2);
-  text-transform: uppercase;
+  border-bottom: .5px solid rgba(0, 0, 0, 0.2); 
   padding: 5px 10px 5px 30px;
 }      
 .sidebar-nav .sidebar-item .sidebar-link img{ 
@@ -144,6 +143,25 @@ body{
 }
 .sup-menu ul li ul li{
   padding-left: 10px;
+}
+.sup-menu ul li{
+  position: relative; 
+}
+.sup-menu ul li .fa-angle-down{
+  position: absolute;
+  font-size: 16px;
+  right: 12px !important;
+}
+.sup-menu ul li.active .fa-angle-down{ 
+  display: block; 
+  transform: rotate(180deg) !important;
+}
+.sup-menu ul li .fa-angle-down{  
+  transform: rotate(0deg) !important;
+}
+.sup-menu ul li ul li a{  
+  color: #000;
+  font-size: 13px;
 }
  
 .form-x{
