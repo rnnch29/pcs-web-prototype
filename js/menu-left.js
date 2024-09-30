@@ -142,7 +142,7 @@ document.addEventListener('DOMContentLoaded', function () {
                                 <span>EDW </span>
                                 <i class="fas fa-angle-down"></i>
                                 <ul>
-                                    <li><a href="#">Container</a></li>
+                                    <li><a href="vessel-edw-container.html">Container</a></li>
                                     <li><a href="#">Cargo</a></li>
                                     <li><a href="#">RORO</a></li>
                                     <li><a href="#">Passenger</a></li>

@@ -110,7 +110,7 @@ body{
   width: auto; 
 }  
 .content {
-  padding: 2rem 2rem 1.5rem;
+  padding: 0px !important;
 }  
 /* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */ 
 /* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
@@ -1015,4 +1015,16 @@ transition: .33s all ease-out;
   font-size: 9px;
   cursor: pointer;
   top: 20px;
+}
+.iframex{
+  min-height: 80vh;
+  width: 100%;
+  transform: scale(1);
+} 
+.sidebar-nav .sidebar-item ul li ul li.active{
+  background-color: var(--bg-success);
+}
+.sidebar-nav .sidebar-item ul li ul li.active a{
+  color: var(--main) !important;
+  font-weight: bold;
 }
